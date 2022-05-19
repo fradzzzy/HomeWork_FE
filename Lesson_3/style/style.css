@@ -1,0 +1,76 @@
+
+
+.header__text{
+	text-align: center;
+	font-size: 48px;
+	color: #0BBBD3;
+}
+
+.header__text__span{
+	color: black;
+}
+
+.content{
+	height: 852px;
+	background-image: url(../img/bg_church.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+  
+	
+
+}
+
+
+
+.content__bg{
+	background-image: url(../img/flag.jpg);
+	background-repeat: no-repeat;
+	background-position: left 80px top 218px;
+	
+}
+
+.content__text{
+	display: inline-block;
+	width: 715px;
+	color: white;
+	font-size: 64px;
+	font-weight: 700;
+	padding: 248px 562px 283px 163px;
+	line-height: 107px;	
+}
+
+.header_cards{
+	width: 327px;
+	font-size: 48px;
+	margin-left: 76px;
+	font-weight: 700;
+	border-bottom: #33B8F1 solid 5px;
+	;
+
+}
+.container_box{
+	margin: 121px auto;
+	width: 100%;
+	text-align: center;
+}
+.box{
+	margin: 0 17px;
+	width: 399px;
+	height: 481px;
+	border-radius: 30px;
+	box-shadow: 0px 4px 6px 5px rgba(0, 0, 0, 0.25);
+	display: inline-block;
+	
+}
+
+a.box_content{
+	font-size: 36px;
+	font-weight: 700;
+}
+
+p.box_content{
+	font-size: 32px;
+	color: #595050;
+	text-align: left;
+}
