@@ -50,13 +50,14 @@
 
 }
 .container_box{
-	margin: 104px 80px;
-	height: 481px;
-	width: 100%;
+	margin: 104px auto;
+	height: 520px;
+	width: 1440px;
 	text-align: center;
+	overflow: auto;
 }
 .box{
-	margin: 17px 17px 0;
+	margin: 17px 17px 10px;
 	width: 400px;
 	height: 481px;
 	border-radius: 30px;
