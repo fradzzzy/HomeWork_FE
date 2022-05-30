@@ -22,7 +22,7 @@ a:link, a:visited, a:hover, a:active{
 .header{
 	background-image: url(../img/bg_header.jpg);
 	background-repeat: no-repeat;
-	height: 32rem;
+	height: 61rem;
 	width: 100%;
 	background-size: 100%;
 	padding-top: 1rem;	
@@ -38,12 +38,11 @@ a:link, a:visited, a:hover, a:active{
 }
 
 .bmw_logo{
-	margin-right: 10rem;
+	margin-right: 32.5rem;
 }
 
-.header_nav_btn_model{
+.header_nav_btn_model, .header_nav_btn_usershop, .header_nav_btn_useracc{
 	margin-left: 2rem;
-	display: inline-block;
 	font-size: 20px;
 }
 
@@ -54,12 +53,9 @@ a:link, a:visited, a:hover, a:active{
 
 .header_nav_btn_usershop{
 	margin-left: 21rem;
-	margin-right: 2rem;
 }
 
-.header_nav_btn_usershop{
-	margin-left: 10rem;
-}
+
 
 
 
@@ -85,31 +81,14 @@ overflow: auto;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 100%;
-	height: 30rem;
+	height: 41rem;
 	padding-top: 1rem ;
 
 }
 
-.card__bmw8_text{
-margin-left: 5.5rem;
-
-}
-.card__bmw8_text>p, .card__bmw5_text>p,
-.card__bmwx7_text>p {
-	font-size: 2.12rem;
-	
-}
-
-.card__bmw8_text>a, .card__bmw5_text>a, 
-.card__bmwx7_text>a{
-	font-size: 2.5rem;
-
-}
-
-
 .card__bmwx7, .card__bmw5{
 	float: left;
-	height: 21.3rem;
+	height: 30rem;
 	padding-top: 0.5rem;
 }
 
@@ -128,7 +107,21 @@ margin-left: 5.5rem;
 	width: 49.45%;
 }
 
+.card__bmw8_text{
+margin-left: 5.5rem;
 
+}
+.card__bmw8_text>p, .card__bmw5_text>p,
+.card__bmwx7_text>p {
+	font-size: 2.12rem;
+	
+}
+
+.card__bmw8_text>a, .card__bmw5_text>a, 
+.card__bmwx7_text>a{
+	font-size: 2.5rem;
+
+}
 
 .card__bmwx7_text{
 	margin-left: 1.5rem;
