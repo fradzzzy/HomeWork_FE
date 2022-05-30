@@ -1,0 +1,156 @@
+@import url(./normalize.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+	background-color: #52616B;
+}
+
+body, a{
+	font-family: 'Montserrat', sans-serif;
+	color: #C9D6DF;
+}
+
+p{
+	margin: 0;
+}
+
+a:link, a:visited, a:hover, a:active{
+	text-decoration: none;
+}
+
+.header{
+	background-image: url(../img/bg_header.jpg);
+	background-repeat: no-repeat;
+	height: 32rem;
+	width: 100%;
+	background-size: 100%;
+	padding-top: 1rem;	
+}
+
+.header_navigation{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.bmw_logo{
+	margin-right: 10rem;
+}
+
+.header_nav_btn_model{
+	margin-left: 2rem;
+	display: inline-block;
+	font-size: 20px;
+}
+
+.header_navigation>a:hover{
+	color:#ffffff;
+	text-shadow: 0 0 1rem white;
+}
+
+.header_nav_btn_usershop{
+	margin-left: 21rem;
+	margin-right: 2rem;
+}
+
+.header_nav_btn_usershop{
+	margin-left: 10rem;
+}
+
+
+
+.header_border{
+	border-top: #C9D6DF 1px solid;
+	width: 80%;
+	margin: 1rem auto 0;
+	
+}
+
+.main{
+	margin: 8.1rem auto 0;
+	width: 80%;
+	height: 68rem;
+}
+
+.main_cards{
+overflow: auto;
+}
+
+.card__bmw8{
+	background-image: url(../img/the_8.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 30rem;
+	padding-top: 1rem ;
+
+}
+
+.card__bmw8_text{
+margin-left: 5.5rem;
+
+}
+.card__bmw8_text>p, .card__bmw5_text>p,
+.card__bmwx7_text>p {
+	font-size: 2.12rem;
+	
+}
+
+.card__bmw8_text>a, .card__bmw5_text>a, 
+.card__bmwx7_text>a{
+	font-size: 2.5rem;
+
+}
+
+
+.card__bmwx7, .card__bmw5{
+	float: left;
+	height: 21.3rem;
+	padding-top: 0.5rem;
+}
+
+.card__bmwx7{
+	background-image: url(../img/the_x7.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 49.45%;
+	margin-right: 0.75rem;
+}
+
+.card__bmw5{
+	background-image: url(../img/the_5.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 49.45%;
+}
+
+
+
+.card__bmwx7_text{
+	margin-left: 1.5rem;
+
+}
+
+.card__bmw5_text{
+	text-align: center;
+}
+
+.card__bmw5:hover{
+	filter: grayscale(100%);
+	transition: 300ms;
+}
+
+.card__bmw8:hover{
+	filter: blur(0.5rem);
+	transition: 300ms;
+}
+
+.card__bmwx7:hover{
+	filter: contrast(150%);
+	transition: 300ms;
+}
+
