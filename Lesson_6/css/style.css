@@ -1,0 +1,76 @@
+@import url(./normalize.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+html{
+	font-size: 10px;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	background-color: #212529;
+	color: white;
+}
+
+:root{
+	--main-color: #FFB742;
+}
+
+a, a:hover, a:link a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+ul, li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	width: 30%;
+}
+
+.header{
+	font-size: 1.7rem;
+	text-transform: capitalize;
+	margin: 1.7rem auto 0;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+.header__menu_list{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.header__menu_list-item{
+	display: block;
+	font-weight: 600;
+	padding: .3rem;
+}
+
+.header__btn{
+	display: block;
+	width: 10%;
+	height: 4.8rem;
+	background-color: var(--main-color);
+	text-align: center;
+	padding-top: 1.4rem;
+	box-sizing: border-box;
+	border-radius: 50px;
+	color: black;
+	font-weight: 600;
+}
+
+
+
+
+
