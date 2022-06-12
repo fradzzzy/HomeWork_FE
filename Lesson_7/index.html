@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+	<title>HomeWork #7</title>
+</head>
+<body>
+	<main class="main">
+		<h1 class="main__title">
+			Intake Main Flow
+		</h1>
+		<p class="main__footnote"><span>*</span> Mandatory field</p>
+		<section class="information" >
+			<p class="information__title">Information</p>
+			<form class="information__form">
+				<div class="information__form-half form-half">
+
+					<p>Intake Type<span>* (select)</span></p>
+					<select id="refferal">
+						<option value="Referral">Referral</option>
+						<option value="Referral">Referral</option>
+						<option value="Referral">Referral</option>
+					</select>
+					<p>phone</p>
+					<input type="tel">
+					<p>email</p>
+					<input type="text">
+					<p>Application Registration (Optional)</p>
+					<input class="information__form-half-list listdown" value="APP0000116"  type="text">
+					<p>Additional Information Requested Date (Optional)</p>
+					<input type="date" value="2021-05-13">
+					<p>Remaining Days Before Referral is Purged (Optional)</p>
+					<input type="number" value="13">
+					<p>Fee Payment Date (Optional)</p>
+					<input type="date" value="2021-05-13">
+					
+					<p>
+						<input type="checkbox" class="custom-checkbox" id="fee-proceed">
+						<label for="fee-proceed">Application Fee Processed</label>
+					</p>
+				</div>
+				<div class="information__form-half">
+					<p>Enrollment Initiation Date jquery</p>
+					<input type="text"  value="05/11/2021" id="datepicker">
+
+					<p>Application Category<span>*</span></p>
+					<input class="information__form-half-list listdown" type="text">
+					<p>Enrollment Submission Date (Optional)</p>
+					<input class="information__form-half-date" type="date"  value="2021-05-11">
+					
+					<div class="information__form-half-checkbox">
+						<input type="checkbox" class="custom-checkbox" id="purged">
+						<label for="purged">Purged</label>
+					</div>
+					<p>Exempt from Paternity (Optional)   (select)</p>
+					<select name="exempt" id="paternity">
+						<option selected value="no">No</option>
+						<option value="yes">Yes</option>
+						<option value="maybe">Maybe</option>
+					</select>
+					<p>Enrollment Status (Optional)</p>
+					<input class="listdown" value="Worklisted" type="text">
+				</div>
+			</form>
+		</section>
+		<section class="maternity">
+			<p class="maternity__title">Maternity Information</p>
+			<form class="maternity__form">
+				
+				<div class="maternity__form-half">
+					<div class="maternity__checkbox">
+						<input type="checkbox" class="custom-checkbox" id="child-supp">
+						<label for="child-supp">Are you requesting child support services for an
+							unborn child?</label>
+					</div>
+				</div>
+				<div class="maternity__form-half">
+					<input type="text" class="listdown" value="None">
+				</div>
+			</form>
+		</section>
+		<section class="official">
+			<p class="official__title">Official Use</p>
+			<form class="official__form" >
+				<div class="official__form-half">
+					<p>Case Category (select)</p>
+					<select name="case" id="case">
+						<option selected>Active IV-A</option>
+						<option>Active IV-A</option>
+						<option>Active IV-A</option>
+						<option>Active IV-A</option>
+					</select>
+					<p>Arrears Only Indicator (Optional)</p>
+					<select id="arrears">
+						<option selected value="">None</option>
+						<option value="">None</option>
+						<option value="">None</option>
+						<option value="">None</option>
+					</select>
+					<p>Assigned County of Ownership (Optional)</p>
+					<select id="country">
+						<option selected value="">None</option>
+						<option value="">None</option>
+						<option value="">None</option>
+						<option value="">None</option>
+					</select>
+					<p>Intergovermental Case Status (details)</p>
+					<select id="case">
+						<option selected value="">None</option>
+						<option value="">None</option>
+						<option value="">None</option>
+						<option value="">None</option>
+					</select>
+					<p>Special Handling Indicator for Applicant (Optional)</p>
+					<select id="applicant">
+						<option selected value="">None</option>
+						<option value="">None</option>
+						<option value="">None</option>
+						<option value="">None</option>
+					</select>
+					<p>Special Handling Indicator for Other Parent (Optional)</p>
+					<select id="other-parent">
+						<option selected value="">None</option>
+						<option value="">None</option>
+						<option value="">None</option>
+						<option value="">None</option>
+					</select>
+				</div>
+				<div class="official__form-half">
+					<p>IV-D Indicator<span>*</span></p>
+					<select id="">
+						<option selected value="Non-IV-D">Non-IV-D</option>
+						<option value="Non-IV-D">Non-IV-D</option>
+						<option value="Non-IV-D">Non-IV-D</option>
+						<option value="Non-IV-D">Non-IV-D</option>
+					</select>
+					<p>Intergovernmental Case Category (Optional)</p>
+					<select id="">
+						<option selected value="">None</option>
+						<option value="">None</option>
+						<option value="">None</option>
+						<option value="">None</option>
+					</select>
+					<p>Intergovernmental Case Type (Optional)</p>
+					<select id="">
+						<option selected value="">None</option>
+						<option value="">None</option>
+						<option value="">None</option>
+						<option value="">None</option>
+					</select>
+					<p>Case Number</p>
+					<input placeholder="Search Case Number" class="search" type="search">
+					<p>Referral Number</p>
+					<input placeholder="Search Referral Number"  class="search" type="search">
+					
+				</div>
+			</form>
+		</section>
+		<section class="sys-info">
+			<p class="sys-info__title">System Information</p>
+			<form action="" class="sys-info__form">
+				<div class="sys-info__form-half">
+					<p>Enrollment Taken by User </p>
+					<input class="search" type="search">
+					<p>Worker (Optional)</p>
+					<input class="search" type="search">
+				</div>
+				<div class="sys-info__form-half">
+					<p>Intake Supervisor (Optional)</p>
+					<input class="search" type="search">
+					<p>Owner (Optional)</p>
+					<input class="search" type="search">
+				</div>
+			</form>
+		</section>
+		<div class="main__btn-container">
+			<a href=""class="main__btn-container__next-btn">Next</a> 
+		</div>	
+	</main>
+	
+	</h1>
+</body>
+</html>
