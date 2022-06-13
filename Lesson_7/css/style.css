@@ -172,6 +172,10 @@ p>span{
 	margin-top: 8.5rem;
 }
 
+.search_blue{
+	color: #0050D8;
+}
+
 .main__btn-container{
 	display: flex;
 	justify-content: flex-end;
