@@ -1,9 +1,15 @@
 @import url(./normalize.css);
 
-@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Volkhov&display=swap');
+
+html{
+	font-size: 14px;
+}
 
 body, a, p, div, h1, h2, h3, h4, ul, li{
 	font-family: 'Rosario';
+	max-width: 1620px;
+	margin: 0 auto;
 }
 
 ul, li{
@@ -25,6 +31,7 @@ section{
 	width: 93%;
 	margin: 4.5rem auto 0;
 }
+
 
 .header{
 	display: flex;
@@ -99,8 +106,6 @@ section{
 	gap: 7.5rem;
 }
 
-.services__box_item{
-}
 
 .services__image{
 	width: 100%;
@@ -121,8 +126,153 @@ section{
 	font-weight: 700;
 }
 
+.team__title{
+	font-size: 6rem;
+	text-align: center;
+	margin-top: 4.5rem;
+	font-weight: 700;
+}
+.team__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
 
+.team__container-card{
+	width: 23%;
+	margin: 0;
+}
 
+.team__container-card>img{
+	width: 100%;
+	border-radius: 40px;
+}
 
+.team__container-card-name{
+	font-family: 'Volkhov';
+	font-size: 2.5rem;
+	color: #FFFAFA;
+	text-align: center;
+	background-color: rgba(163, 83, 10, 0.7);
+	width: 100%;
+	height: 10rem;
+	padding-top: 3.5rem;
+	box-sizing: border-box;
+	position: relative;
+	bottom: 143px;
+	border-radius:0 0 40px 40px;
+	display: none;
+}
 
+.contacts{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
+.contacts__msg,
+.contacts__map{
+	width: 48%;
+	height: 35.5rem;
+}
+
+.contacts__msg-title{
+	font-size: 3.5rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 3.5rem;
+	font-style: italic;
+}
+
+.contacts__msg-form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 3fr;
+	padding: 2rem;
+	background-color: #E5E5E5;
+	gap: 2.25rem;
+	height: 24rem;
+	box-sizing: border-box;
+}
+
+.contacts__msg-form-text,
+.contacts__msg-form-mail,
+.contacts__msg-form-name{
+	border: none;
+	font-size: 2.2rem;
+	width: 100%;
+}
+
+.contacts__msg-form-text{
+	grid-column: 1/-1;
+	resize: none;
+}
+
+.footer__container{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 8.5rem;
+}
+
+.footer__container-item{
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.footer__container-item>p>a,
+.italic-semibold,
+.footer__container-item>p{
+	font-weight: 600;
+	font-style: italic;
+}
+
+.bold-normal{
+	font-weight: 700;
+	font-style: normal;
+}
+
+p.footer__container-item-title{
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.social{
+	font-weight: 600;
+}
+
+p.social-title{
+	font-weight: 700;
+	font-style: normal;
+
+}
+
+.social__instagram::before{
+	content: url(../icons/insta.svg);
+	position: relative;
+	right: 1.5rem;
+}
+
+.social__facebook::before{
+	content: url(../icons/facebook.svg);
+	position: relative;
+	right: 1.5rem;
+}
+
+.social__twitter::before{
+	content: url(../icons/twitter.svg);
+	position: relative;
+	right: 1.5rem;
+}
+
+.social__facebook,
+.social__twitter,
+.social__instagram{
+	width: 65%;
+	margin: 0 auto;
+	text-align: left;
+	display: block;
+}
