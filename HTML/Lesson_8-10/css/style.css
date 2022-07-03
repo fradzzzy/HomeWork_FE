@@ -74,6 +74,7 @@ section{
 
 .gallery-item{
 	width: 20%;
+	position: relative;
 }
 
 .gallery__box{
@@ -87,6 +88,23 @@ section{
 .gallery-box-item{
 	width: 100%;
 	display: block;
+	position: relative;
+}
+
+.gallery-item-left{
+	animation: gallery-box-item-left-anim 2s ease 1;
+}
+
+.gallery-item-right{
+	animation: gallery-box-item-right-anim 2s ease 1;
+}
+
+.gallery-box-item-left{
+	animation: gallery-box-item-left-anim 1s ease 1;
+}
+
+.gallery-box-item-right{
+	animation: gallery-box-item-right-anim 1s ease 1;
 }
 
 .services{
@@ -106,6 +124,9 @@ section{
 	gap: 7.5rem;
 }
 
+.services__box_item{
+	position: relative;
+}
 
 .services__image{
 	width: 100%;
@@ -124,6 +145,22 @@ section{
 	line-height: 3.6rem;
 	margin-top: 0.75rem;
 	font-weight: 700;
+}
+
+.styling{
+	animation: styling-anim 10s linear infinite;
+}
+
+.trimming{
+	animation: trimming-anim 10s linear infinite;
+}
+
+.hair_str{
+	animation: hair_str-anim 10s linear infinite;
+}
+
+.smooth_shave{
+	animation: smooth_shave-anim 10s linear infinite;
 }
 
 .team__title{
@@ -147,6 +184,7 @@ section{
 .team__container-card>img{
 	width: 100%;
 	border-radius: 40px;
+	filter: brightness(0.4);
 }
 
 .team__container-card-name{
@@ -162,7 +200,8 @@ section{
 	position: relative;
 	bottom: 143px;
 	border-radius:0 0 40px 40px;
-	display: none;
+	display: block;
+	opacity: 0;
 }
 
 .contacts{
@@ -275,4 +314,280 @@ p.social-title{
 	margin: 0 auto;
 	text-align: left;
 	display: block;
+}
+
+.card__meredith:hover>p{
+	opacity: 100;
+	transition: 1000ms;
+}
+
+.card__meredith:hover>img{
+	filter: brightness();
+}
+
+
+.card__jason:hover>p{
+	opacity: 100;
+	transition: 1000ms;
+}
+
+.card__jason:hover>img{
+	filter: brightness();
+}
+
+.card__ryan:hover>p{
+	opacity: 100;
+	transition: 1000ms;
+}
+
+.card__ryan:hover>img{
+	filter: brightness();
+}
+
+.card__james:hover>p{
+	opacity: 100;
+	transition: 1000ms;
+}
+
+.card__james:hover>img{
+	filter: brightness();
+}
+
+
+@keyframes gallery-box-item-left-anim {
+	from{
+		left: -400%;
+	}
+	to{
+		left: 0;
+	}
+}
+
+@keyframes gallery-box-item-right-anim {
+	from{
+		right: -400%;
+	}
+	to{
+		right: 0;
+	}
+}
+
+@keyframes styling-anim {
+	from,to{
+		left: 0;
+		top: 0;
+	}
+
+	25%{
+		top: 0;
+		left: 141%;
+	}
+
+	50%{
+		top: 130%;
+		left: 141%;
+	}
+
+	75%{
+		left: 0;
+		top: 130%;
+	}
+
+}
+
+@keyframes trimming-anim {
+	from,to{
+		left: 0;
+		top: 0;
+	}
+
+	25%{
+		top: 130%;
+		left: 0;
+	}
+
+	50%{
+		top: 130%;
+		left: -141%;
+	}
+
+	75%{
+		left: -141%;
+		top: 0;
+	}
+
+}
+
+@keyframes hair_str-anim {
+	from,to{
+		left: 0;
+		top: 0;
+	}
+
+	25%{
+		top: 0;
+		left: -141%;
+	}
+
+	50%{
+		top: -130%;
+		left: -141%;
+	}
+
+	75%{
+		left: 0;
+		top: -130%;
+	}
+
+}
+
+@keyframes smooth_shave-anim {
+	from,to{
+		left: 0;
+		top: 0;
+	}
+
+	25%{
+		top: -130%;
+		left: 0
+	}
+
+	50%{
+		top: -130%;
+		left: 141%;
+	}
+
+	75%{
+		left: 141%;
+		top: 0;
+	}
+
+}
+
+@media screen and (max-width: 1440px){
+	html{
+		font-size: 12px;
+	}
+
+	.team__container-card>p{
+		bottom: 10rem;
+	}
+}
+
+@media screen and (max-width: 1280px){
+	html{
+		font-size: 9px;
+	}
+}
+
+@media screen and (max-width: 992px){
+	html{
+		font-size: 7px;
+	}
+
+	.gallery{
+		display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+	}
+
+	.gallery-item {
+    width: 100%;
+    position: relative;
+    align-self: end;
+	}
+
+	.gallery__box{
+		max-width: 100%;
+		grid-column: 1/-1;
+	}
+
+	.gallery-item-right{
+		grid-column: 2/3;
+    grid-row: 1/2;
+	}
+
+	.gallery-box-item-left{
+		animation: gallery-box-item-left-anim 2s ease 1;
+	}
+
+	.gallery-box-item-right{
+		animation: gallery-box-item-right-anim 2s ease 1;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.header__nav{
+		min-width: 86%;
+	}
+
+	.header__nav-list{
+		padding: 0;
+	}
+
+	.gallery{
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+	}
+	.gallery-item{
+		width: 100%;
+	}
+
+	.gallery__box{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.services{
+		width: 75%;
+		display: flex;
+	}
+
+	.services__image{
+		display: none;
+	}
+
+	.team__container{
+		flex-direction: column;
+	}
+
+	.team__container-card{
+		width: 60%;
+	}
+
+	.team__container-card>p{
+		bottom: 20rem;
+		height: 20rem;
+		font-size: 5rem;
+		padding-top: 6.5rem;
+	}
+
+	.contacts{
+		flex-direction: column-reverse;
+		width: 80%;
+		height: 80rem;
+	}
+
+	.contacts__map, .contacts__msg{
+		width: 100%;
+	}
+
+	.footer__container{
+		flex-direction: column;
+		height: 44rem;
+	}
+
+	.footer__container-item{
+		min-width: 30%;
+
+	}
+
+	.social-title{
+		margin-bottom: 2rem;
+	}
 }
