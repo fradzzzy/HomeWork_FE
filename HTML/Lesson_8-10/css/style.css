@@ -543,6 +543,12 @@ p.social-title{
 		width: 100%;
 	}
 
+	.gallery-item-left {
+    animation: gallery-box-item-right-anim 2s ease 1;
+	}
+	.gallery-item-right {
+    animation: gallery-box-item-left-anim 2s ease 1;
+	}
 	.services{
 		width: 75%;
 		display: flex;
@@ -569,7 +575,7 @@ p.social-title{
 
 	.contacts{
 		flex-direction: column-reverse;
-		width: 80%;
+		width: 60%;
 		height: 80rem;
 	}
 
